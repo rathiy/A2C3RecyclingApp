@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="recyclingapp.recyclingcentres.ViewAllRecycling">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Label IsVisible="False" x:Name="lblnorecy" FontSize="Small" TextColor="BlueViolet"
+                   Text="no records found.." HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+            <ListView x:Name="listBindAll" ItemSelected="listview_selctedItem" SelectedItem="{Binding SelectedItem, Mode=OneWay}"  HasUnevenRows="True">
+                <ListView.Header>
+                    <ContentView Padding="0,5" BackgroundColor="White">
+                        <Label FontSize="Large" TextColor="BlueViolet"
+                   Text="Current Recycling centre" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                    </ContentView>
+                </ListView.Header>
+
+                <ListView.ItemTemplate>
+                    
+                    <DataTemplate>
+                        <ViewCell Height="60">
+                            <StackLayout Orientation="Horizontal">
+                                <BoxView BackgroundColor="Blue" WidthRequest="10" Margin="0,0,0,10" />
+                                <StackLayout BackgroundColor="White" Orientation="Vertical" Margin="5,5,10,5">
+                                    <Label Text="{Binding Recycling}" FontAttributes="Bold" />
+                                    <Label Text="{Binding datecreated, StringFormat='Seconds: {0}'}" TextColor="Gray" />
+                                    <Label Text="{Binding Keyword, StringFormat='Seconds: {0}'}" TextColor="Gray" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button Text="Add recycling" Clicked="btn_add_recy_Clicked"></Button>
+
+        </StackLayout>
+        
+        
+    </ContentPage.Content>
+</ContentPage>

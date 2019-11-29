@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="recyclingapp.campaign.ViewSelectedCampaign">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label FontSize="Large" TextColor="BlueViolet" Padding="20"
+                   Text="Your Selected Campaign Infomation" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+
+            <Label  Text="Campaign Name"></Label>
+            <Label x:Name="lblcampname" TextColor="#333" FontSize = "20" Text="" />
+
+            <Label  Text="Campaign Start Date"></Label>
+            <Label x:Name="lblstartdate" TextColor="#ddd" FontSize = "12" Text="" />
+
+
+            <Label  Text="Campaign Description"></Label>
+            <Label x:Name="lbldescription" TextColor="#333" FontSize = "15" Text="" />
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

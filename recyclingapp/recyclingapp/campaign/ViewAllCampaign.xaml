@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="recyclingapp.campaign.ViewAllCampaign">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="5">
+
+            <!--<ListView ItemsSource="{Binding personList}" x:Name="listBindAll"
+            ItemTapped="Handle_ItemTapped"
+            SelectedItem="{Binding SelectedItem, Mode=OneWay}"
+            HasUnevenRows="True"
+            Margin="10,10,0,0">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="60">
+                            <StackLayout Orientation="Horizontal">
+                                <BoxView BackgroundColor="Blue" WidthRequest="10" Margin="0,0,0,10" />
+                                <StackLayout BackgroundColor="White" Orientation="Vertical" Margin="5,5,10,5">
+                                    <Label Text="{Binding campname}" FontAttributes="Bold" />
+                                    <Label Text="{Binding describtion, StringFormat='Seconds: {0}'}" TextColor="Gray" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>-->
+
+            <ListView x:Name="listBindAll" ItemSelected="listview_selctedItem" SelectedItem="{Binding SelectedItem, Mode=OneWay}"  HasUnevenRows="True">
+                <ListView.Header>
+                    <ContentView Padding="0,5" BackgroundColor="White">
+                        <Label FontSize="Large" TextColor="BlueViolet"
+                   Text="Current Campaign" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                    </ContentView>
+                </ListView.Header>
+                
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="60">
+                            <StackLayout Orientation="Horizontal">
+                                <BoxView BackgroundColor="Blue" WidthRequest="10" Margin="0,0,0,10" />
+                                <StackLayout BackgroundColor="White" Orientation="Vertical" Margin="5,5,10,5">
+                                    <Label Text="{Binding campname}" FontAttributes="Bold" />
+                                    <Label Text="{Binding describtion, StringFormat='Seconds: {0}'}" TextColor="Gray" />
+                                    <Label Text="{Binding address, StringFormat='Seconds: {0}'}" TextColor="Gray" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button Text="Add campaign" Clicked="btn_add_campaign_Clicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

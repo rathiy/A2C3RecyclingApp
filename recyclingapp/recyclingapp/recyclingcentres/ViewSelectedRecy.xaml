@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="recyclingapp.recyclingcentres.ViewSelectedRecy">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <StackLayout x:Name="StackMapLayout" Orientation="Vertical" VerticalOptions="FillAndExpand">
+                <ActivityIndicator x:Name="ActivityMap" IsRunning="{Binding Busy}" IsVisible="{Binding Busy}" />
+                <Label x:Name="LabelNoPos" VerticalOptions="Center" IsVisible="false" HorizontalOptions="Center" />
+               
+            </StackLayout>
+            <Label Text="See Recycling information here !" />
+            <maps:Map x:Name="map" 
+               IsShowingUser="True"
+               MoveToLastRegionOnLayoutChange="False">
+                <x:Arguments>
+                    <maps:MapSpan>
+                        <x:Arguments>
+                            <maps:Position>
+                                <x:Arguments>
+                                    <x:Double>52.4071747</x:Double>
+                                    <x:Double>-1.5037461</x:Double>
+                                </x:Arguments>
+                            </maps:Position>
+                            <x:Double>0.01</x:Double>
+                            <x:Double>0.01</x:Double>
+                        </x:Arguments>
+                    </maps:MapSpan>
+                </x:Arguments>
+                <maps:Map.Pins>
+                    <maps:Pin Label="Coventry University"
+                       Address="Priory Street"
+                       Type="Place">
+                        <maps:Pin.Position>
+                            <maps:Position>
+                                <x:Arguments>
+                                    <x:Double>52.4071747</x:Double>
+                                    <x:Double>-1.5037461</x:Double>
+                                </x:Arguments>
+                            </maps:Position>
+                        </maps:Pin.Position>
+                    </maps:Pin>
+                </maps:Map.Pins>
+            </maps:Map>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

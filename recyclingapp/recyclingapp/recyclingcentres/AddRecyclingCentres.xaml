@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="recyclingapp.recyclingcentres.AddRecyclingCentres">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+         
+            <StackLayout Orientation="Horizontal">
+                    <Entry x:Name="Recycling" Placeholder="Recycling centre Name"></Entry>
+            </StackLayout>
+
+            <Label Text="DateAdded"></Label>
+            <DatePicker x:Name="datecreated"></DatePicker>
+            <Label Text="Address"></Label>
+            <Editor x:Name="address1"></Editor>
+            <Editor x:Name="address2"></Editor>
+            <Label Text="Recycling type"></Label>
+            <Editor x:Name="keyword"></Editor>
+            <Label Text="Longitude "></Label>
+            <Editor x:Name="longitude"></Editor>
+            <Label Text="Latitude"></Label>
+            <Editor x:Name="latitude"></Editor>
+
+            <Button x:Name="AddRecyclingbtn"  Text="Add" Clicked="AddRecyclingbtn_Clicked"></Button>
+            <Button x:Name="ViewRecyclingbtn" Text="View" Clicked="ViewRecyclingbtn_Clicked"></Button>
+
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

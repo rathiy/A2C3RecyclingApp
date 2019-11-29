@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="recyclingapp.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label FontSize="Large" TextColor="BlueViolet" Padding="20"
+                   Text="Please Select Your Interest Area" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+            <StackLayout Spacing="20">
+                <Button x:Name="user_camp_btn" Clicked="user_camp_btn_Clicked" Text="Campaign" HorizontalOptions="FillAndExpand" TextColor="Blue" HeightRequest="40"  BackgroundColor="White"/>
+                <Button x:Name="user_recycling_btn" Clicked="user_rec_btn_Clicked" Text="Recycling" HorizontalOptions="FillAndExpand" TextColor="Blue" HeightRequest="40"  BackgroundColor="White"/>
+                <Button x:Name="user_discussion_btn" Clicked="user_disc_btn_Clicked" Text="Discussion" HorizontalOptions="FillAndExpand" TextColor="Blue" HeightRequest="40"  BackgroundColor="White"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="twitter.png"/>
+                <Image Source="facebook.png"/>
+                <Image Source="pinterest.png"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

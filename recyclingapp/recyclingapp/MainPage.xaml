@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="recyclingapp.MainPage">
+    <RelativeLayout Padding="0">
+        <Image Source="bg" 
+               Aspect="AspectFill" 
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+        <StackLayout>
+        <!-- Place new controls here -->
+            <Label Text="Save Mother Earth" TextColor="White" FontSize="Large"
+           HorizontalOptions="Center"
+           VerticalOptions="Center" />
+
+
+
+            <Button x:Name="login_btn"  Text="Login" Clicked="login_btn_Clicked"/>
+        <Button x:Name="register_btn" Text="Register" Clicked="register_btn_Clicked"/>
+           
+    </StackLayout>
+    </RelativeLayout>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "recyclingapp.Android", "recyclingapp\recyclingapp.Android\recyclingapp.Android.csproj", "{56CCBC80-260C-4889-9044-CC53DFDAC7FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "recyclingapp", "recyclingapp\recyclingapp\recyclingapp.csproj", "{0CC3F59F-8142-4925-8C71-36E4830E0A90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56CCBC80-260C-4889-9044-CC53DFDAC7FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56CCBC80-260C-4889-9044-CC53DFDAC7FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56CCBC80-260C-4889-9044-CC53DFDAC7FB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{56CCBC80-260C-4889-9044-CC53DFDAC7FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56CCBC80-260C-4889-9044-CC53DFDAC7FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56CCBC80-260C-4889-9044-CC53DFDAC7FB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0CC3F59F-8142-4925-8C71-36E4830E0A90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CC3F59F-8142-4925-8C71-36E4830E0A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CC3F59F-8142-4925-8C71-36E4830E0A90}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0CC3F59F-8142-4925-8C71-36E4830E0A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CC3F59F-8142-4925-8C71-36E4830E0A90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CC3F59F-8142-4925-8C71-36E4830E0A90}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52704DF0-2035-4426-A05B-6CE0A417BAF9}
+	EndGlobalSection
+EndGlobal

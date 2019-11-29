@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="recyclingapp.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout Padding="40,60,40,0" VerticalOptions="FillAndExpand" Spacing="70">
+                    <Label Text="User Registration" TextColor="Blue" HorizontalOptions="CenterAndExpand" FontSize="30"/>
+                    <StackLayout Spacing="20">
+                        <Entry x:Name="username_txt" Placeholder="User Name" Text="{Binding UserName}" HeightRequest="40" HorizontalOptions="FillAndExpand"  TextColor="Gray" BackgroundColor="White"/>
+
+                        <Entry x:Name="password_txt" Placeholder="Password" IsPassword="true" Text="{Binding Password}" HeightRequest="40" HorizontalOptions="FillAndExpand"  TextColor="Gray" BackgroundColor="White"/>
+
+                        <Button x:Name="user_log_btn" Clicked="user_log_btn_Clicked" Text="Login" HorizontalOptions="FillAndExpand" TextColor="Blue" HeightRequest="40"  BackgroundColor="White"/>
+                    </StackLayout>
+                    <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                    </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

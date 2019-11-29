@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="recyclingapp.campaign.AddCampaign" BackgroundColor="#f6f6f6" Title="Add Campaign">
+    <ContentPage.Content>
+        
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="5">
+            <Label FontSize="Large" TextColor="BlueViolet"
+                   Text="Add Campaign" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+            <Entry x:Name="campname" Placeholder="Campaign Name" ></Entry>
+            <Entry x:Name="describtion" Placeholder="Campaign Description"></Entry>
+            <Label  Text="Campaign Start Date"></Label>
+            <DatePicker x:Name="datecreated"></DatePicker>
+            <Entry x:Name="address" Placeholder="Campaign Description"></Entry>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Submit" Clicked="BtnSubmit_Clicked"></Button>
+                <Button Text="View Campaign" Clicked="Show_Clicked"></Button>
+            </StackLayout>
+            <Label Text="Go To Home Page" TextColor="Blue"></Label>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
